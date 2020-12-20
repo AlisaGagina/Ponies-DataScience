@@ -13,6 +13,10 @@ others pony’s line
   - the dictionary words will be taken from  words_alpha.txt, located here:
 [https://github.com/dwyl/english-words](https://github.com/dwyl/english-words)
   - This should be saved in your project as data/words_alpha.txt
+### Analysis.py
+  is the main piece of code to be run. It will be run in a UNIX shell in which PYTHONPATH includes a path to the project’s src
+directory. It should also accept an optional argument “-o <file_name>”. If given, the JSON output is
+written to that file. If it is NOT given, the JSON output should be written to stdout.
 ## To-dos:
   - non_dictionary_words takes way too long, need a better way
   - finish unit tests
