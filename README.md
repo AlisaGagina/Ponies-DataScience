@@ -17,6 +17,8 @@ others pony’s line
   is the main piece of code to be run. It will be run in a UNIX shell in which PYTHONPATH includes a path to the project’s src
 directory. It should also accept an optional argument “-o <file_name>”. If given, the JSON output is
 written to that file. If it is NOT given, the JSON output should be written to stdout.
+### TF-IDF (compile_word_counts.py, compute_pony_lang.py)
+Calculates the termfrequency-inversedocumentfrequency for each ponies' words. There is one script for computing word counts for each pony from all episodes of MLP, and saves each term used at least five times into a json file (`python compile_word_counts.py -o <word_counts_json> <clean_dialog.csv file>`). Then there is a second script for actually computing the scores and prints the top n distinct words used by each pony to stdout in json format (`python compute_pony_lang.py <pony_counts.json> <num_words>`). 
 ## To-dos:
   - non_dictionary_words takes way too long, need a better way
   - finish unit tests
