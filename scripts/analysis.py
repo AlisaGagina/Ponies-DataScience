@@ -1,5 +1,5 @@
 
-t os.path as os 
+import os.path as os 
 import argparse
 import sys
 import pandas as pd
